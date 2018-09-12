@@ -6,13 +6,15 @@ public class MonsterController
 {
 	//Data member Section
 	private MarshmellowMonster myMonster;
-	
+	private MarshmellowMonster userMonster;
 	//Constructor section
 	public MonsterController()
 	{
 		//Job 1: initialize data members!
 		myMonster = new MarshmellowMonster("TheFailure" ,3.75 ,3, false ,3);
-		userMonster = new MarshmellowMonster(,,);
+		; 
+		
+		
 	}
 	
 	//method section
@@ -23,17 +25,22 @@ public class MonsterController
 		System.out.println("My monster has this many arms:" + myMonster.getarmCount());
 	
 		//Make a new monster and customize from user input!
+		userMonster = new MarshmellowMonster();
 		MarshmellowMonster userMonster;
+		
+		Scanner inputScanner = new Scanner(System.in);
+		System.out.println("What is your monsters name?");
+		String answer = inputScanner.nextLine();
+		
+		
 		
 		
 		
 	}
-	private void questions()
+
 	{
-		Scanner inputScanner = new Scanner(System.in);
-		System.out.println("What is your monsters name?");
-		String answer = inputScanner.nextLine();
-		UserMonster.setusername(answer);
+	
+		
 	}
 	
 }

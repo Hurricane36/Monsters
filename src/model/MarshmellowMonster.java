@@ -10,7 +10,7 @@ public class MarshmellowMonster
 	private boolean hasNoses;
 	private int armCount;
 	
-	private String username;
+	private String userName;
 	private double userlegCount;
 	private int usereyeCount;
 	private boolean userhasNoses;
@@ -28,20 +28,24 @@ public class MarshmellowMonster
 	public MarshmellowMonster(String name)
 	{
 		this.name = name;
+		this.name = userName;
 	}
 	
-	
-	public MarshmellowMonster(String name, String username,double userlegCount, double legCount, int usereyeCount, int eyeCount,boolean userhasNoses, boolean hasNoses, int userarmCount,int armCount)
+	public MarshmellowMonster(String userName, double userlegCount, int usereyeCount, boolean userhasNoses,int userarmCount)
+	{
+	this.name = userName;
+	this.legCount = usereyeCount;
+	this.hasNoses = userhasNoses;
+	this.armCount = userarmCount;
+	}
+	public MarshmellowMonster(String name, double legCount, int eyeCount, boolean hasNoses,int armCount)
 	{
 		this.name = name;
 		this.legCount = legCount;
 		this.eyeCount = eyeCount;
 		this.hasNoses = hasNoses;
 		this.armCount = armCount;
-		this.name = username;
-		this.legCount = usereyeCount;
-		this.hasNoses = userhasNoses;
-		this.armCount = userarmCount;
+		
 			
 	}
 
