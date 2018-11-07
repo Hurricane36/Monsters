@@ -9,16 +9,6 @@ public class MarshmellowMonster
 	private int eyeCount;
 	private boolean hasNoses;
 	private int armCount;
-	
-	private String userName;
-	private double userlegCount;
-	private int usereyeCount;
-	private boolean userhasNoses;
-	private int userarmCount;
-	
-	
-	
-	
 	public MarshmellowMonster()
 	{
 		//Default values are 0 or null
@@ -28,7 +18,7 @@ public class MarshmellowMonster
 	public MarshmellowMonster(String name)
 	{
 		this.name = name;
-		this.name = userName;
+		
 	}
 	
 	public MarshmellowMonster(String userName, double userlegCount, int usereyeCount, boolean userhasNoses,int userarmCount)
@@ -38,13 +28,13 @@ public class MarshmellowMonster
 	this.hasNoses = userhasNoses;
 	this.armCount = userarmCount;
 	}
-	public MarshmellowMonster(String name, double legCount, int eyeCount, boolean hasNoses,int armCount)
+	//public MarshmellowMonster(String name, double legCount, int eyeCount, boolean hasNoses,int armCount)
 	{
-		this.name = name;
-		this.legCount = legCount;
-		this.eyeCount = eyeCount;
-		this.hasNoses = hasNoses;
-		this.armCount = armCount;
+	//	this.name = name;
+	//	this.legCount = legCount;
+	//	this.eyeCount = eyeCount;
+	//	this.hasNoses = hasNoses;
+	//	this.armCount = armCount;
 		
 			
 	}
